@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flappy 4'11</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="game-card">
+      <div class="topbar">
+        <div>
+          <h1>FLAPPY <span>4'11</span></h1>
+          <p>How high can she actually get? 💀</p>
+        </div>
+        <div class="scorebox">
+          <span>SCORE</span>
+          <strong id="score">0</strong>
+        </div>
+      </div>
+
+      <div id="game" class="game" tabindex="0" aria-label="Flappy 4'11 game">
+        <div class="cloud c1"></div>
+        <div class="cloud c2"></div>
+        <div class="height-meter">
+          <span>VERTICAL STATUS</span>
+          <b id="heightText">4'11"</b>
+        </div>
+
+        <div id="bird" class="bird-wrap">
+          <img src="assets/Unknown.jpg" alt="Bird" />
+        </div>
+
+        <div id="startScreen" class="overlay">
+          <div class="panel">
+            <div class="emoji">🐦</div>
+            <h2>THE HEIGHT TEST</h2>
+            <p>Tap / click / press <b>SPACE</b> to flap.</p>
+            <p class="joke">Goal: prove 4'11" can still reach the top shelf.</p>
+            <button id="startBtn">START GAME</button>
+          </div>
+        </div>
+
+        <div id="gameOver" class="overlay hidden">
+          <div class="panel">
+            <div class="emoji">💀</div>
+            <h2 id="overTitle">BONK.</h2>
+            <p id="overText">Gravity has opinions about your height.</p>
+            <div class="final-score">Score: <b id="finalScore">0</b></div>
+            <button id="restartBtn">TRY AGAIN</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <span>SPACE / CLICK / TAP = FLAP</span>
+        <span>ESC = PAUSE</span>
+      </div>
+    </section>
+    <p class="footer">Unofficial joke game • No Complan endorsement intended 😭</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
